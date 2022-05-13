@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Source+Code+Pro&display=swap');
+
 body {
 
     background-color: #202124;
@@ -30,4 +32,71 @@ header h1 {
 
 .efecto-espejo {
  -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+main {
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100%;
+
+  border-top: 2px solid white;
+  padding-top: 90px;
+
+}
+
+main .menu-inicio {
+
+  height: 520px;
+  width: 420px;
+
+  border: 2px solid white;
+  border-radius: 20px;
+
+  background: linear-gradient(1deg, rgb(19, 34, 99),rgb(80, 117, 185),rgb(238, 238, 245));
+
+}
+
+.boton-agregar-palabra, .boton-iniciar {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  width: 380px;
+  height: 100px;
+
+  font-size: 38px;
+  font-family: 'Kanit', sans-serif;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  background: transparent;
+  color: rgb(28, 4, 66);
+
+  border-radius: 5px;
+
+  transition: 1s all;
+
+}
+
+.boton-agregar-palabra:hover, .boton-iniciar:hover {
+
+  background-color: rgb(26, 6, 80);
+  color: white;
+
+}
+
+.imagen-ahorcado {
+
+  display: flex;
+  width: 45%;
+  height: 35%;
+  margin: 0 auto;
+  margin-top:25px;
+
 }
