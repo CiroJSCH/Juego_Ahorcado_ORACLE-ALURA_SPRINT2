@@ -71,7 +71,7 @@ main .menu-inicio {
   border: 2px solid #148D8D;
   border-radius: 20px;
 
-  background: linear-gradient(1deg, rgb(5, 37, 56),rgb(27, 96, 136),rgb(78, 149, 207));
+  background: linear-gradient(1deg, rgb(13, 3, 48) ,rgb(26, 9, 119)20%,rgb(213, 215, 240)70%);
 
 }
 
@@ -165,4 +165,72 @@ footer .logo-github:hover {
   transform: scale(0.18);
   opacity: 80%;
 
+}
+
+@media screen and (max-width:480px) {
+
+
+  header {
+
+    width: 390px;
+    padding-left: 15px;
+    padding-top: 10px;
+
+  }
+
+  .efecto-espejo {
+
+    -webkit-box-reflect:unset;
+
+  }
+
+  header h1 {
+
+    text-shadow: 0 3px 3px rgb(83, 83, 83);
+
+  }
+
+  main {
+
+    width: 390px;
+
+  }
+
+  main .menu-inicio {
+
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    padding-bottom: 15px;
+
+  }
+
+  .boton-agregar-palabra, .boton-iniciar {
+
+    height: 75px;
+    width: 80%;
+    font-size: 24px;
+    padding: 0; 
+    border: none; 
+    background: none;
+
+    border: 2px solid #0E2C40;
+
+
+  }
+
+  .imagen-ahorcado {
+
+    width: 45%;
+
+
+  }
+
+  footer {
+
+    margin-top: 80px;
+
+  }
+
+  
 }
