@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&family=Mukta:wght@300;400&family=Nunito&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+html {
+
+    background-color: #202124;
+
+}
+
+main {
+
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+    width: 45em;
+    height: 50em;
+
+    background-color: transparent;
+
+}
+
+main .teclado {
+
+    max-width: 30em;
+    height: 15em;
+
+    background-color: transparent;
+
+    width: auto;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.letra {
+
+    width: 4em;
+    height: 3em;
+    margin-top: 9px;
+
+    cursor: pointer;
+
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid rgb(18, 11, 128);
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+    transition: 0.7s all;
+
+}
+
+.letra:hover {
+
+    border: 2px solid rgb(16, 28, 202);
+    background-color: rgb(34, 33, 33);
+    font-weight: bolder;
+
+}
