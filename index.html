@@ -6,8 +6,8 @@
     <link rel="icon" href="Imagenes/iconoAhorcado.ico">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ventana-styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 <body>
     <header>
         <a href="https://www.aluracursos.com/" target="_blank"><img src="Imagenes/logoAlura.png" alt="Logo de Alura Latam"></a>
@@ -16,9 +16,20 @@
     </header>
     <main>
         <section class="menu-inicio">
-            <button type="submit" name="boton-iniciar" class="boton-iniciar">Iniciar Juego</button>
-            <button type="submit" name="boton-agregar-palabra" class="boton-agregar-palabra">Agregar Palabra</button>
-            <img src="Imagenes/imagenAhorcado.png" alt="Ilustración ahorcado" class="imagen-ahorcado">
+            <a href="pagina-ahorcado.html"><button type="submit" name="boton-iniciar" class="boton-iniciar">Iniciar Juego</button></a>
+            <button type="submit" name="boton-agregar-palabra" class="boton-agregar-palabra" id="abrir-ventana-emergente">Agregar Palabra</button>
+            <div class="contenedor-ventana" id="ventana-emergente">
+                <div class="ventana">
+                    <label for="ingresar-palabra">Ingrese la palabra</label>
+                    <input type="text" name="ingresar-palabra" id="ingresar-palabra">
+                </div>
+                <p class="soloMayus">&#x1f6c8 Solo mayúsculas &#x1f6c8</p>
+                <div class="botones">
+                    <button class="boton-guardar">Guardar</b   utton>
+                    <button class="boton-cancelar" id="botonCancelar">Cancelar</button>
+                </div>
+            </div>
+            <img src="Imagenes/imagenAhorcado.png" alt="Ilustración ahorcado" class="imagen-ahorcado" id="imagenAhorcado">
         </section>
     </main>
     <footer>
@@ -28,5 +39,6 @@
             <a href="https://github.com/CiroJSCH"><img src="Imagenes/logoGithub.png" alt="GitHub del autor"></a>
         </div>
     </footer>
+    <script src="abrir-ventana.js"></script>
 </body>
 </html>
