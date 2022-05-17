@@ -5,7 +5,7 @@
 body {
 
     background-color: #202124;
-    width: 100%px;
+    width: 100%;
 
     margin: 0 auto;
 
@@ -39,7 +39,7 @@ header a:hover {
 header h1 {
   margin: 0 auto;
   text-align:center;
-  color: #e2e7f7;
+  color: #f2f5fd;
 
   font-family: 'Source Code Pro', monospace;
   font-size: 50px;
@@ -65,14 +65,22 @@ main {
 
 main .menu-inicio {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 520px;
   width: 420px;
 
   border: 2px solid #148D8D;
   border-radius: 20px;
 
-  background: linear-gradient(1deg, rgb(13, 3, 48) ,rgb(26, 9, 119)20%,rgb(213, 215, 240)70%);
+  background: linear-gradient(1deg, rgb(3, 11, 48) ,rgb(9, 29, 119)20%,rgb(213, 219, 240)70%);
 
+} 
+
+.menu-inicio a {
+  text-decoration: none;
 }
 
 .boton-agregar-palabra, .boton-iniciar {
@@ -229,6 +237,7 @@ footer .logo-github:hover {
   footer {
 
     margin-top: 80px;
+    width: 100%;
 
   }
 
