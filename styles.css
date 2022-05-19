@@ -4,11 +4,7 @@
 
 body {
 
-    background-color: #202124;
-    width: 100%;
-
-    margin: 0 auto;
-
+  background-color: #202124;
 }
 
 header {
@@ -145,6 +141,12 @@ footer {
   
 }
 
+footer .contenido {
+
+  width: 100%;
+
+}
+
 footer .autor {
 
   font-size: 26px;
@@ -175,6 +177,17 @@ footer .logo-github:hover {
 
 }
 
+.incorrecto {
+
+  color: red !important;
+
+}
+
+.correcto {
+
+  color: greenyellow !important;
+
+}
 @media screen and (max-width:480px) {
 
 

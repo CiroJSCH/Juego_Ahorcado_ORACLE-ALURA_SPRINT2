@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&family=Nunito&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
+
+.contenedor-ventana {
+
+    width: 360px;
+    height: 220px;
+    z-index: 1;
+    margin-top: 8px;
+
+    border-radius: 5px;
+    background:transparent;
+    pointer-events: none;
+    display: none;
+
+}
+
+.mostrar {
+    transition: 1.5s all;
+    pointer-events: auto;
+    display: contents;
+    opacity: 1.0;
+}
+
+.cerrar {
+    transition: 1.5s all;
+    pointer-events: auto;
+    display: none;
+    opacity: 0;
+}
+
+.contenedor-ventana .ventana {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu-inicio .contenedor-ventana .soloMayus {
+
+    position: relative;
+    bottom: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+
+}
+
+.ventana label {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(219, 234, 243);
+
+    padding-top: 25px;
+    padding-bottom: 35px;
+
+}
+
+.ventana input {
+
+    width: 15em;
+    margin-bottom: 30px;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: solid 1px rgb(71, 202, 253);
+
+    padding-bottom: 3px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align:center;
+
+    color: aqua;
+
+}
+
+.ventana input:focus{
+    border: none;
+    border-bottom: solid 1px rgb(71, 202, 253);
+    color: aqua;
+    font-weight: 600;
+    outline: none;
+  }
+
+.botones {
+
+    text-align: center;
+
+}
+
+.botones .boton-guardar, .boton-cancelar {
+
+    width: 115px;
+    height: 40px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    border-radius: 5px;
+    border-color: rgb(6, 6, 58);
+
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+
+    background: linear-gradient(#148D8D,rgb(183, 222, 231));
+
+    transition: 1s all;
+
+}
+
+.botones .boton-guardar:focus, .boton-cancelar:focus {
+
+    outline: none;
+
+}
+
+.botones .boton-guardar:hover, .boton-cancelar:hover {
+
+    background: rgb(97, 155, 189);
+    color: white;
+    transform: scale(1.1);
+    border: none;
+
+}

@@ -4,47 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego del ahorcado-J ugar</title>
+    <title>Juego del ahorcado-Jugar</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles-ahorcado.css">
     <link rel="icon" href="Imagenes/iconoAhorcado.ico">
 </head>
-<body>
-    <!-- <header> -->
-        <!-- <a href="https://www.aluracursos.com/" target="_blank"><img src="Imagenes/logoAlura.png" alt="Logo de Alura Latam"></a> -->
-        <!--<a href="https://www.oracle.com/ar/index.html" target="_blank"><img src="Imagenes/Oracle-Logo.png" alt="Logo de ORACLE"></a>-->
-        <!-- <h1 class="efecto-espejo">Juego del ahorcado</h1>
-    </header> -->
+<body onload="dibujarEstructuraAhorcado();">
+    <header>
+        <div class="contenido">
+            <a href="https://www.aluracursos.com/" target="_blank"><img src="Imagenes/logoAlura.png" alt="Logo de Alura Latam"></a>
+            <!--<a href="https://www.oracle.com/ar/index.html" target="_blank"><img src="Imagenes/Oracle-Logo.png" alt="Logo de ORACLE"></a>-->
+            <h1 class="efecto-espejo">Juego del ahorcado</h1>
+        </div>
+    </header>
     <main>
+        <canvas id="grafico-ahorcado" width="" height=""></canvas>
+        <section class="letras">
+            <div class="letras-correctas" id="letras-correctas">
+                
+            </div>
+            <div class="letras-incorrectas" id="letras-incorrectas">
+
+            </div>
+        </section>
+        <div class="opciones-juego">
+            <button onclick="jugarDeNuevo()" class="boton-nuevoJuego">Nuevo juego</button>
+            <button class="boton-desistir">Desistir</button>
+        </div>
+        <div class="mensaje-resultado">
+            <span class="mensaje" id="resultado"></span>
+        </div>
         <section class="teclado">
-            <button class="letra">A</button>
-            <button class="letra">B</button>
-            <button class="letra">C</button>
-            <button class="letra">D</button>
-            <button class="letra">E</button>
-            <button class="letra">F</button>
-            <button class="letra">G</button>
-            <button class="letra">H</button>
-            <button class="letra">I</button>
-            <button class="letra">J</button>
-            <button class="letra">K</button>
-            <button class="letra">L</button>
-            <button class="letra">M</button>
-            <button class="letra">N</button>
-            <button class="letra">Ñ</button>
-            <button class="letra">O</button>
-            <button class="letra">P</button>
-            <button class="letra">Q</button>
-            <button class="letra">R</button>
-            <button class="letra">S</button>
-            <button class="letra">T</button>
-            <button class="letra">U</button>
-            <button class="letra">V</button>
-            <button class="letra">W</button>
-            <button class="letra">X</button>
-            <button class="letra">Y</button>
-            <button class="letra">Z</button>
+            <button onclick="obtenerLetra('A')" class="letra">A</button>
+            <button onclick="obtenerLetra('B')" class="letra">B</button>
+            <button onclick="obtenerLetra('C')" class="letra">C</button>
+            <button onclick="obtenerLetra('D')" class="letra">D</button>
+            <button onclick="obtenerLetra('E')" class="letra">E</button>
+            <button onclick="obtenerLetra('F')" class="letra">F</button>
+            <button onclick="obtenerLetra('G')" class="letra">G</button>
+            <button onclick="obtenerLetra('H')" class="letra">H</button>
+            <button onclick="obtenerLetra('I')" class="letra">I</button>
+            <button onclick="obtenerLetra('J')" class="letra">J</button>
+            <button onclick="obtenerLetra('K')" class="letra">K</button>
+            <button onclick="obtenerLetra('L')" class="letra">L</button>
+            <button onclick="obtenerLetra('M')" class="letra">M</button>
+            <button onclick="obtenerLetra('N')" class="letra">N</button>
+            <button onclick="obtenerLetra('Ñ')" class="letra">Ñ</button>
+            <button onclick="obtenerLetra('O')" class="letra">O</button>
+            <button onclick="obtenerLetra('P')" class="letra">P</button>
+            <button onclick="obtenerLetra('Q')" class="letra">Q</button>
+            <button onclick="obtenerLetra('R')" class="letra">R</button>
+            <button onclick="obtenerLetra('S')" class="letra">S</button>
+            <button onclick="obtenerLetra('T')" class="letra">T</button>
+            <button onclick="obtenerLetra('U')" class="letra">U</button>
+            <button onclick="obtenerLetra('V')" class="letra">V</button>
+            <button onclick="obtenerLetra('W')" class="letra">W</button>
+            <button onclick="obtenerLetra('X')" class="letra">X</button>
+            <button onclick="obtenerLetra('Y')" class="letra">Y</button>
+            <button onclick="obtenerLetra('Z')" class="letra">Z</button>
         </section>
     </main>
+    <footer>
+        <div class="contenido">
+            <p class="autor">Desarrollado por Ciro Schapert</p>
+            <p class="info-extra">Challenge #1 Sprint 2 ORACLE-ALURA</p>
+            <div class="logo-github">
+                <a href="https://github.com/CiroJSCH"><img src="Imagenes/logoGithub.png" alt="GitHub del autor"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/dibujarAhorcado.js"></script>
+    <script src="/elegirPalabra.js"></script>
+    <script src="/palabras.js"></script>
+    <script src="/jugarDeNuevo.js"></script>
 </body>
 </html>

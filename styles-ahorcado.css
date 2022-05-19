@@ -1,21 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300&family=Mukta:wght@300;400&family=Nunito&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Kanit:wght@300&family=Montserrat:wght@300&family=Mukta:wght@300;400&family=Nunito&family=Roboto+Condensed&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
 html {
 
     background-color: #202124;
 
 }
 
+header {
+
+    height: 3em;
+    width: 60em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    margin-top: 2em;
+
+}
+
+header .contenido {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-bottom: 10px;
+
+    border-bottom: 5px double #174a6b;
+
+}
+
+header a {
+
+  padding-top: 10px;
+  
+}
+
+header a:hover {
+
+  opacity: 0.9;
+
+}
+
+header h1 {
+  margin: 0 auto;
+  text-align:center;
+  color: #ffffff;
+
+  font-family: 'Source Code Pro', monospace;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 main {
 
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 30px;
 
 
     width: 45em;
     height: 50em;
 
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#grafico-ahorcado {
+
+    width: 25em;
+    height: 25em;
+
+    background-color: rgb(39, 38, 38);
+
+    border: 2px solid rgb(11, 5, 66);
+    border-radius: 5px;
+    /* box-shadow: 0px 10px 10px -6px rgb(70, 68, 68); */
+    box-shadow: inset 0 0 15px rgb(3, 1, 31);
+
+}
+
+main .letras {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1em;
+
+    color: white;
+    height: 7em;
+
+}
+
+main .letras .letras-correctas {
+
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    display: flex;
+
+}
+
+main .letras span.rayas {
+
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-bottom: 3px solid rgb(3, 78, 56);
+    color: rgb(255, 255, 255);
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+
+}
+
+main .letras .letras-incorrectas {
+
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+
+}
+
+main .letras span.letInc {
+
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Mukta', sans-serif;
+    font-size: 24px;
+
+}
+
+main .opciones-juego {
+
+    margin-top: 0;
+
+}
+
+.boton-nuevoJuego, .boton-desistir {
+
+    width: 9em;
+    height: 3em;
+
+    margin-right: 5px;
+    margin-left: 5px;
+
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+
+    border-radius: 5px;
+    border: 2px solid rgb(7, 83, 83);
+
+    background: transparent;
+
+    color:white;
+
+    cursor: pointer;
+    transition: 1s all;
+
+}
+
+.boton-nuevoJuego:hover, .boton-desistir:hover {
+
+    background: #303135;;
+    transform: scale(1.1);
+
+}
+
+main .mensaje-resultado {
+
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+
+    width: 20em;
+
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+
+    border: none;
+
+    background: transparent;
+    padding: 3px;
+    
+}
+
+.mostrarMensaje {
+
+    background: linear-gradient(90deg, #202124,rgb(3, 2, 46),#202124) !important;
 
 }
 
@@ -30,7 +209,6 @@ main .teclado {
     margin: auto;
     align-items: center;
     text-align: center;
-
 
 }
 
@@ -62,5 +240,67 @@ main .teclado {
     border: 2px solid rgb(16, 28, 202);
     background-color: rgb(34, 33, 33);
     font-weight: bolder;
+ 
+}
+
+.deshabilitar {
+
+    pointer-events: none !important;
+    cursor: none !important;
+    opacity: 0.7 !important;
 
 }
+
+footer {
+
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    background:linear-gradient(180deg, #202124, black);
+    
+  }
+
+footer .contenido {
+
+    margin: 0 auto;
+    margin-top: 30px;
+
+    width: 45em;
+    height: 12em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background:linear-gradient(180deg, #202124, black);
+    
+}
+  
+footer .autor {
+  
+    font-size: 26px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  
+}
+  
+footer .info-extra {
+  
+    font-size: 20px;
+  
+}
+  
+  
+footer .logo-github {
+  
+    height: 50px;
+    transform: scale(0.17);
+    transition: 1s all;
+  
+}
+  
+footer .logo-github:hover {
+  
+    transform: scale(0.18);
+    opacity: 80%;
+  
+  }
