@@ -33,7 +33,7 @@ for (var i=0; i<array.length; i++){
     palabrasUsuario.push (array[i]);
 }
 
-console.log (palabrasUsuario);
+// console.log (palabrasUsuario);
 
 botonAgregarPalabra.addEventListener ('click', function(){
 
@@ -53,8 +53,8 @@ botonAgregarPalabra.addEventListener ('click', function(){
         advertencia.textContent = 'Guardada'
         advertencia.classList.add ('correcto');
 
-        console.log (palabrasUsuario);
-        console.log (listaPal);
+        // console.log (palabrasUsuario);
+        // console.log (listaPal);
 
     }
 
