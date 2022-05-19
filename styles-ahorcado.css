@@ -8,8 +8,8 @@ html {
 
 header {
 
-    height: 3em;
-    width: 60em;
+    height: 7em;
+    width: 45em;
     margin: 0 auto;
     margin-bottom: 4em;
     margin-top: 2em;
@@ -20,11 +20,13 @@ header .contenido {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+
+    width: 45em;
+    height: 5em;
     margin: 0 auto;
+
     margin-bottom: 20px;
-    width: 100%;
     padding-bottom: 10px;
 
     border-bottom: 5px double #174a6b;
@@ -45,11 +47,10 @@ header a:hover {
 
 header h1 {
   margin: 0 auto;
-  text-align:center;
   color: #ffffff;
 
   font-family: 'Source Code Pro', monospace;
-  font-size: 50px;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -57,7 +58,6 @@ main {
 
     margin: 0 auto;
     margin-top: 30px;
-
 
     width: 45em;
     height: 50em;
