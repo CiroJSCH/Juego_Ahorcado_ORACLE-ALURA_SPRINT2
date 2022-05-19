@@ -17,7 +17,7 @@ botonDesistir.addEventListener ('click', function(){
 })
 
 var listaP = listaPalabras();
-console.log (listaP);
+// console.log (listaP);
 
 /*Selecciono una palabra al azar*/
 var indiceSecreto = Math.floor(Math.random()*listaP.length);  
@@ -60,7 +60,7 @@ function obtenerLetra (letra) {
         if (letraPresionada == letras[i]) {
 
             palabraFormada [i] = letraPresionada;
-            console.log (palabraFormada);
+            // console.log (palabraFormada);
 
             var letraCorrecta = document.getElementById ('linea' + i);
             letraCorrecta.textContent = letraPresionada;
