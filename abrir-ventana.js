@@ -25,15 +25,20 @@ cancelar.addEventListener ('click', function(){
 var botonAgregarPalabra = document.querySelector ('.boton-guardar');
 var advertencia = document.querySelector ('.soloMayus');
 
-var palabrasUsuario = [];
+var palabrasUsuario = [array];
 var array = localStorage.getItem('palabrasUs');
 array = JSON.parse(array);
+localStorage.setItem('palabrasUs', JSON.stringify(palabrasUsuario));
+
 
 for (var i=0; i<array.length; i++){
+    if (array[i]!=null){
     palabrasUsuario.push (array[i]);
+    }
 }
 
-// console.log (palabrasUsuario);
+console.log (palabrasUsuario);
+console.log (array);
 
 botonAgregarPalabra.addEventListener ('click', function(){
 
@@ -53,8 +58,8 @@ botonAgregarPalabra.addEventListener ('click', function(){
         advertencia.textContent = 'Guardada'
         advertencia.classList.add ('correcto');
 
-        // console.log (palabrasUsuario);
-        // console.log (listaPal);
+        console.log (palabrasUsuario);
+        console.log (listaPal);
 
     }
 
