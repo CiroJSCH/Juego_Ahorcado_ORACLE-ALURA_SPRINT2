@@ -6,6 +6,9 @@ const cancelar = document.getElementById ('botonCancelar');
 
 const imagenAhorcado = document.getElementById ('imagenAhorcado');
 
+var palabrasUsuario = [];
+localStorage.setItem('palabrasUs', JSON.stringify('TEST'));
+
 agregarPalabra.addEventListener ('click', function(){
     
     imagenAhorcado.classList.add ('cerrar');
@@ -25,23 +28,14 @@ cancelar.addEventListener ('click', function(){
 var botonAgregarPalabra = document.querySelector ('.boton-guardar');
 var advertencia = document.querySelector ('.soloMayus');
 
-var palabrasUsuario = [array];
 var array = localStorage.getItem('palabrasUs');
-
-localStorage.setItem('array', JSON.stringify(array));
 array = JSON.parse(array);
-
-for (var i=0; i<=array.length; i++) {
-    
-    if (array[i] != null) {
-        palabrasUsuario.push (array[i]);
-    }
-    
-}
-
 console.log (array);
-console.log (palabrasUsuario);
 
+palabrasUsuario.push (array);
+
+console.log (palabrasUsuario);
+    
 botonAgregarPalabra.addEventListener ('click', function(){
 
     var palabraIngresada = document.getElementById ('ingresar-palabra');
@@ -52,12 +46,9 @@ botonAgregarPalabra.addEventListener ('click', function(){
         
         palabrasUsuario.push (palabraIngresada.value);
         // Se guarda en localStorage despues de JSON stringificarlo 
-
         localStorage.setItem('palabrasUs', JSON.stringify(palabrasUsuario));
-        array.push (palabraIngresada.value);
 
-        localStorage.setItem('array', JSON.stringify(array));
-
+        
         advertencia.classList.remove ('incorrecto');
         palabraIngresada.value = '';
         advertencia.textContent = 'Guardada'
