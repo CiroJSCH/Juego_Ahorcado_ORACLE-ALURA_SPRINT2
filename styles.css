@@ -68,10 +68,12 @@ main .menu-inicio {
   height: 520px;
   width: 420px;
 
-  border: 2px solid #148D8D;
+  border: 2px solid #0d5757;
   border-radius: 20px;
 
-  background: linear-gradient(1deg, rgb(3, 11, 48) ,rgb(9, 29, 119)20%,rgb(213, 219, 240)70%);
+  background: rgb(3, 15, 48);
+
+  box-shadow: 0 3px 5px lightslategray;
 
 } 
 
@@ -95,9 +97,10 @@ main .menu-inicio {
   align-items: center;
 
   cursor: pointer;
-  background: transparent;
-  color: rgb(0, 0, 0);
+  background: rgb(3, 3, 85);
+  color: white;
 
+  border: none;
   border-radius: 5px;
 
   transition: 1s all;
@@ -106,9 +109,9 @@ main .menu-inicio {
 
 .boton-agregar-palabra:hover, .boton-iniciar:hover {
 
-  background-color: #0E2C40;
+  background-color: #eeedf7;
   transform: scale(1.03);
-  color: white;
+  color: black;
 
 }
 
