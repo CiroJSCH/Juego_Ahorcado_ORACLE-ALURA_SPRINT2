@@ -16,8 +16,8 @@ botonDesistir.addEventListener ('click', function(){
 
 })
 
-var listaP = listaPalabras();
-// console.log (listaP);
+var listaP = listaPalabras()
+console.log (listaP);
 
 /*Selecciono una palabra al azar*/
 var indiceSecreto = Math.floor(Math.random()*listaP.length);  

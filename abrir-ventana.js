@@ -27,18 +27,20 @@ var advertencia = document.querySelector ('.soloMayus');
 
 var palabrasUsuario = [array];
 var array = localStorage.getItem('palabrasUs');
+
+localStorage.setItem('array', JSON.stringify(array));
 array = JSON.parse(array);
-localStorage.setItem('palabrasUs', JSON.stringify(palabrasUsuario));
 
-
-for (var i=0; i<array.length; i++){
-    if (array[i]!=null){
-    palabrasUsuario.push (array[i]);
+for (var i=0; i<=array.length; i++) {
+    
+    if (array[i] != null) {
+        palabrasUsuario.push (array[i]);
     }
+    
 }
 
-// console.log (palabrasUsuario);
-// console.log (array);
+console.log (array);
+console.log (palabrasUsuario);
 
 botonAgregarPalabra.addEventListener ('click', function(){
 
@@ -52,13 +54,17 @@ botonAgregarPalabra.addEventListener ('click', function(){
         // Se guarda en localStorage despues de JSON stringificarlo 
 
         localStorage.setItem('palabrasUs', JSON.stringify(palabrasUsuario));
+        array.push (palabraIngresada.value);
+
+        localStorage.setItem('array', JSON.stringify(array));
 
         advertencia.classList.remove ('incorrecto');
         palabraIngresada.value = '';
         advertencia.textContent = 'Guardada'
         advertencia.classList.add ('correcto');
 
-        // console.log (palabrasUsuario);
+        console.log (palabrasUsuario);
+        console.log (array);
         // console.log (listaPal);
 
     }
