@@ -52,21 +52,24 @@ function obtenerLetra (letra) {
 
     var letraPresionada = letra;
     // console.log (letraPresionada);
-
+    
     var correctas = 0;
+
+    var preguntar = letrasTocadas.indexOf(letraPresionada);
 
     for (var i=0; i<cantLetras; i++) {
 
         if (letraPresionada == letras[i]) {
 
             palabraFormada [i] = letraPresionada;
+
             // console.log (palabraFormada);
 
             var letraCorrecta = document.getElementById ('linea' + i);
             letraCorrecta.textContent = letraPresionada;
 
             correctas+=1;
-            intentos = intentos;
+            
          }
 
      }
@@ -86,21 +89,21 @@ function obtenerLetra (letra) {
             letraIncorrecta.textContent =  letraPresionada;
 
             letrasTocadas.push (letraPresionada);
-            // console.log (letrasTocadas);
 
         }
 
-        else if ( (letrasTocadas.length != 0) && (letrasTocadas.indexOf (letraPresionada) !=0) ) {
+        else if ( (letrasTocadas.length != 0) && (preguntar==-1)) {
+
+            // console.log ("caca");
 
             var letraIncorrecta = document.createElement ('span');
             var zonaIncorrectas = document.getElementById ("letras-incorrectas");
-
             zonaIncorrectas.appendChild (letraIncorrecta);
             letraIncorrecta.classList.add('letInc');
             letraIncorrecta.textContent =  letraPresionada;
 
             letrasTocadas.push (letraPresionada);
-            // console.log (letrasTocadas);
+
 
         }
 
