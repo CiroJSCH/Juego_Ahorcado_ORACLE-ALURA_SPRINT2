@@ -304,3 +304,72 @@ footer .logo-github:hover {
     opacity: 80%;
   
   }
+
+@media screen and (max-width:480px) {
+
+header {
+
+    height: 4em;
+    width: 26em;
+
+}
+
+header .contenido {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 26em;
+    height: 5em;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    border-bottom: 5px double #174a6b;
+    padding-left: 2px;
+
+}
+
+header h1 {
+    margin: auto;
+    color: #ffffff;
+  
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+main {
+
+    width: 26em;
+    height: 50em;
+
+}
+
+footer {
+
+    width: 26em;
+    height: 15em;
+
+}
+
+footer .contenido {
+
+    margin: 0 auto;
+    margin-top: 6em;
+
+    width: 26em;
+    height: 15em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background:linear-gradient(180deg, #202124, black);
+    
+}
+
+
+}
