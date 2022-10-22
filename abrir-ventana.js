@@ -30,12 +30,9 @@ var advertencia = document.querySelector ('.soloMayus');
 
 var array = localStorage.getItem('palabrasUs');
 array = JSON.parse(array);
-console.log (array);
 
 palabrasUsuario.push (array);
-
-console.log (palabrasUsuario);
-    
+ 
 botonAgregarPalabra.addEventListener ('click', function(){
 
     var palabraIngresada = document.getElementById ('ingresar-palabra');
@@ -54,8 +51,6 @@ botonAgregarPalabra.addEventListener ('click', function(){
         advertencia.textContent = 'Guardada'
         advertencia.classList.add ('correcto');
 
-        console.log (palabrasUsuario);
-        console.log (array);
         // console.log (listaPal);
 
     }
