@@ -16,7 +16,7 @@ botonDesistir.addEventListener ('click', function(){
 
 })
 
-var listaP = listaPalabras()
+let listaP = JSON.parse(localStorage.getItem("palabras"));
 
 /*Selecciono una palabra al azar*/
 var indiceSecreto = Math.floor(Math.random()*listaP.length);  
